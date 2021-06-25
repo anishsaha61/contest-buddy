@@ -1,5 +1,5 @@
 import React from "react";
-// import style from "./NavBar.module.css";
+import style from "./NavBar.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { withRouter } from "react-router-dom";
@@ -39,7 +39,7 @@ const NavBar = (props) => {
         <Nav className="justify-content-end">
           <Nav.Link eventKey="/about">About</Nav.Link>
         </Nav>
-        <Navbar.Collapse className="justify-content-end">
+        <Navbar.Collapse className="text-center">
           {navMenus.map((menuObject) => (
             <Nav.Link
               key={menuObject.title}
